@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:background="#00ffff">
+
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/editName"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentTop="true"
+        android:hint="ID"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/editEmail"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="0dp"
+        android:hint="NAME"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/editCC"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="-29dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Email"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/editCC" />
+
+    <EditText
+        android:id="@+id/editCC"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/button5"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Course Count"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="11dp"
+        android:background="#FB4"
+        android:text="VIEW ALL"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="13dp"
+        android:background="#ff01"
+        android:text="DELETE"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="11dp"
+        android:background="#00f"
+        android:text="UPDATE"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="13dp"
+        android:text="VIEW"
+        android:background="#00FF00"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="16dp"
+        android:background="#ff0"
+        android:text="ADD DATA"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
